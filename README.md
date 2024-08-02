@@ -9,7 +9,7 @@
 - **Tips and Tricks**: Helpful Excel tips and best practices to boost your productivity.
 
 ### Getting Started
-1. **Clone the repository**: `git clone https://github.com/yourusername/excel-projects.git`  
+1. **Clone the repository**: `git clone https://github.com/Mkopczynski55/Excel.git`  
 2. **Explore the directories**: Navigate through the folders to find the specific projects or files you need.  
 3. **Run the VBA scripts**: Open the Excel files containing VBA scripts, and enable macros to start using them.
 
