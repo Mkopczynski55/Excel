@@ -21,12 +21,8 @@ Sub SendFormatterRequest()
     qryName = Application.InputBox("Provide query's name:", "Power Query Formatter", Type:=2)
 
     If qryName = "False" Then Exit Sub
-    
-    On Error GoTo QueryNotFound
-    
+
     rawCode = awb.Queries(qryName).Formula
-    
-    On Error GoTo 0
     
     esc = rawCode
     esc = Replace(esc, vbCrLf, " ")
@@ -86,12 +82,6 @@ Sub SendFormatterRequest()
     
     Set http = Nothing
     Set parsed = Nothing
-    
-    Exit Sub
-    
-QueryNotFound:
-    
-    MsgBox "Query not found!", vbOKOnly + vbCritical, "Failed to find query"
     
 End Sub
 
